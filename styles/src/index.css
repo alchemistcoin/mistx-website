@@ -1,0 +1,68 @@
+@tailwind base;
+
+@tailwind screens;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  html {
+    color: #FFFFFF;
+    background-color: #1D2230;
+  }
+  body {
+    @apply text-white subpixel-antialiased;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-position: 0 -30vh;
+    background-repeat: no-repeat;
+    background: radial-gradient(48.8% 62.34% at 50% 0%,rgba(31,46,60,0.9) 0%,rgba(29,34,48,0) 100%);
+  }
+  h1 {
+    @apply text-2xl font-bold pb-3 text-left;
+  }
+  h2 {
+    @apply text-xl font-bold pb-3 text-left;
+  }
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-primary {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-primary:hover {
+    @apply bg-blue-700;
+  }
+  header { 
+    flex-direction: row;
+    width: 100%;
+    top: 0;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 1rem 1rem;
+    z-index: 2;
+    background: linear-gradient(180deg,rgba(32,47,60,1) 0%,rgb(19 26 34 / 1) 100%);
+  }
+  main {
+    min-height: calc(100vh - 16rem);
+  }
+  footer {
+    height: 8rem;
+  }
+  .logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    height: 5rem;
+    justify-content: center;
+  }
+  .logo-wrapper span {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-bg {
+    background: transparent linear-gradient(296deg, #5b5ff5 0%, #7043f5 100%) 0% 0% no-repeat
+      padding-box;
+  }
+}

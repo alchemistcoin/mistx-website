@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.yarn.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn
+.yarn-integrity
+.yarn.lock
+/app/.yarn.lock
+
+# dotenv environment variables file
+.env
+.env.test
+.env.local
+
+/build
+
+# vscode
+.history
+.vscode
+
+#Mac
+.DS_Store
+
+# Jetbrains
+.idea/**/workspace.xml
+*.iml

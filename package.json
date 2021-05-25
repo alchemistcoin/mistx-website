@@ -1,0 +1,40 @@
+{
+  "name": "mistx-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^2.1.1",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "husky": "^6.0.0",
+    "postcss": "^8",
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "prebuild": "yarn build:css",
+    "build:css": "tailwind build styles/src/index.css -o styles/tailwind.css",
+    "watch:css": "watch 'yarn build:css' ./styles/src && ./tailwind.config.js",
+    "lint": "eslint . --cache --ext .ts,.tsx"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
