@@ -15,10 +15,12 @@
   },
   "scripts": {
     "prebuild": "yarn build:css",
-    "build:css": "tailwind build styles/src/index.css -o styles/tailwind.css",
+    "build:css": "tailwind build styles/src/index.css -o public/assets/css/tailwind.css",
     "watch:css": "watch 'yarn build:css' ./styles/src && ./tailwind.config.js",
-    "build": "tailwind build styles/src/index.css -o styles/tailwind.css",
-    "lint": "eslint . --cache --ext .ts,.tsx"
+    "build": "yarn build:css",
+    "lint": "eslint . --cache --ext .ts,.tsx",
+    "build:serve": "yarn build && http-server public -p 8080 --proxy http://localhost:8080?",
+    "serve": "http-server public -p 8080 --proxy http://localhost:8080?"
   },
   "eslintConfig": {
     "extends": [
