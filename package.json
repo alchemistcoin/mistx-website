@@ -17,6 +17,7 @@
     "prebuild": "yarn build:css",
     "build:css": "tailwind build styles/src/index.css -o styles/tailwind.css",
     "watch:css": "watch 'yarn build:css' ./styles/src && ./tailwind.config.js",
+    "build": "tailwind build styles/src/index.css -o styles/tailwind.css",
     "lint": "eslint . --cache --ext .ts,.tsx"
   },
   "eslintConfig": {
