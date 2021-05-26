@@ -13,8 +13,8 @@
     -->
     <link rel="manifest" href="manifest.json" />
     <title>mistX</title>
-    <meta name="title" content="mistX - Flashdex">
-    <meta name="keywords" content="mistX, DEX, FlashDex, flashbots, MEV, Alchemist, Alchemists, $mist, MIST, sandwich attacks">
+    <meta name="title" content="mistX - FlashDEX">
+    <meta name="keywords" content="mistX, DEX, FlashDEX, Flashbots, MEV, Alchemist, Alchemists, $mist, MIST, sandwich attacks">
     <meta name="description" content="Trade through Flashbots, no frontrunning and no sandwich attacks. Created by Alchemists, powered by Flashbots, driven by $mist.">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -26,7 +26,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mistx.io">
-    <meta property="og:title" content="mistX - Flashdex">
+    <meta property="og:title" content="mistX - FlashDEX">
     <meta property="og:description" content="Trade through Flashbots, no frontrunning and no sandwich attacks.
     Created by Alchemists, powered by Flashbots, driven by $mist.">
     <meta property="og:image" content="https://mistx.io/assets/img/mistX.png">
@@ -34,48 +34,84 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mistx.io">
-    <meta property="twitter:title" content="mistX - Flashdex">
+    <meta property="twitter:title" content="mistX - FlashDEX">
     <meta property="twitter:description" content="Trade through Flashbots, no frontrunning and no sandwich attacks. Created by Alchemists, powered by Flashbots, driven by $mist.">
     <meta property="twitter:image" content="https://mistx.io/assets/img/mistX.png">
 
 
   </head>
   <body>
-    <header>
+    <div class="bg-image"></div>
+    <header class="min-h-screen flex flex-col items-center justify-center">
       <div class="logo-wrapper">
         <span>
-          <svg width="100" height="110" viewBox="0 0 100 110" fill="none"><rect width="1.39074" height="131.818" transform="matrix(0.708048 0.706165 -0.708048 0.706165 96.6514 9)" fill="white"></rect><rect width="1.39074" height="131.818" transform="matrix(-0.708048 0.706165 -0.708048 -0.706165 97.3181 102.085)" fill="white"></rect><path d="M59.5541 7.96V22H56.1341V13.22L53.0941 22H50.1341L47.0741 13.2V22H43.6541V7.96H47.8341L51.6541 17.74L55.3941 7.96H59.5541Z" fill="white"></path><path d="M56.34 95.36V98.08H52.5V109.5H49.06V98.08H45.26V95.36H56.34Z" fill="white"></path><path d="M5.29629 51.61V65.75H1.87629V51.61H5.29629Z" fill="white"></path><path d="M99.7696 61.77C99.7696 62.5167 99.5763 63.2033 99.1896 63.83C98.8163 64.4567 98.2563 64.9567 97.5096 65.33C96.7763 65.7033 95.883 65.89 94.8296 65.89C93.243 65.89 91.9363 65.5033 90.9096 64.73C89.883 63.9567 89.323 62.8767 89.2296 61.49H92.8696C92.923 62.0233 93.1096 62.4433 93.4296 62.75C93.763 63.0567 94.183 63.21 94.6896 63.21C95.1296 63.21 95.4763 63.09 95.7296 62.85C95.983 62.61 96.1096 62.29 96.1096 61.89C96.1096 61.53 95.9896 61.23 95.7496 60.99C95.523 60.75 95.2363 60.5567 94.8896 60.41C94.543 60.25 94.063 60.0633 93.4496 59.85C92.5563 59.5433 91.823 59.25 91.2496 58.97C90.6896 58.6767 90.203 58.25 89.7896 57.69C89.3896 57.1167 89.1896 56.3767 89.1896 55.47C89.1896 54.63 89.403 53.9033 89.8296 53.29C90.2563 52.6767 90.843 52.21 91.5896 51.89C92.3496 51.5567 93.2163 51.39 94.1896 51.39C95.763 51.39 97.0096 51.7633 97.9296 52.51C98.863 53.2567 99.3896 54.2833 99.5096 55.59H95.8096C95.743 55.1233 95.5696 54.7567 95.2896 54.49C95.023 54.21 94.6563 54.07 94.1896 54.07C93.7896 54.07 93.463 54.1767 93.2096 54.39C92.9696 54.6033 92.8496 54.9167 92.8496 55.33C92.8496 55.6633 92.9563 55.95 93.1696 56.19C93.3963 56.4167 93.6763 56.6033 94.0096 56.75C94.343 56.8967 94.823 57.0833 95.4496 57.31C96.3563 57.6167 97.0963 57.9233 97.6696 58.23C98.243 58.5233 98.7363 58.9567 99.1496 59.53C99.563 60.1033 99.7696 60.85 99.7696 61.77Z" fill="white"></path></svg>
+          <svg width="213" height="227" viewBox="0 0 213 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+            <rect width="3" height="249.524" rx="1.5" transform="matrix(0.7083 0.705911 -0.7083 0.705911 194 0)" fill="#FFBF00"/>
+            <rect width="3" height="249.524" rx="1.5" transform="matrix(-0.7083 0.705911 -0.7083 -0.705912 196 176)" fill="#FFBF00"/>
+            <path d="M121.902 0.988165V27.5776H115.425V11.6315L109.479 27.5776H104.252L98.2672 11.5937V27.5776H91.7903V0.988165H99.4414L106.903 19.3963L114.289 0.988165H121.902Z" fill="white"/>
+            <path d="M117.125 152.084V157.273H110.081V178.671H103.604V157.273H96.5601V152.084H117.125Z" fill="white"/>
+            <path d="M23.7545 76.5379V103.124H17.2783V76.5379H23.7545Z" fill="white"/>
+            <path d="M185.235 103.389C183.291 103.389 181.549 103.074 180.009 102.443C178.469 101.811 177.231 100.877 176.297 99.64C175.388 98.4028 174.909 96.9132 174.858 95.1711H181.751C181.852 96.1558 182.193 96.9132 182.773 97.4434C183.354 97.9484 184.112 98.2009 185.046 98.2009C186.005 98.2009 186.763 97.9863 187.318 97.557C187.874 97.1026 188.151 96.484 188.151 95.7013C188.151 95.0448 187.924 94.502 187.47 94.0728C187.04 93.6436 186.498 93.2901 185.841 93.0124C185.21 92.7346 184.301 92.419 183.114 92.0655C181.397 91.5353 179.996 91.0051 178.91 90.4749C177.825 89.9447 176.891 89.162 176.108 88.1268C175.325 87.0916 174.934 85.7409 174.934 84.0745C174.934 81.6002 175.83 79.6687 177.623 78.28C179.415 76.8661 181.751 76.1592 184.629 76.1592C187.558 76.1592 189.919 76.8661 191.711 78.28C193.504 79.6687 194.463 81.6128 194.59 84.1124H187.583C187.533 83.2539 187.217 82.5848 186.636 82.1051C186.056 81.6002 185.311 81.3477 184.402 81.3477C183.619 81.3477 182.988 81.5623 182.508 81.9915C182.029 82.3955 181.789 82.9888 181.789 83.7715C181.789 84.6299 182.193 85.299 183.001 85.7787C183.809 86.2585 185.071 86.776 186.788 87.3315C188.505 87.9122 189.893 88.4677 190.954 88.9979C192.04 89.5281 192.974 90.2982 193.756 91.3081C194.539 92.318 194.93 93.6183 194.93 95.2089C194.93 96.7238 194.539 98.0999 193.756 99.337C192.999 100.574 191.888 101.559 190.424 102.291C188.959 103.023 187.23 103.389 185.235 103.389Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d" x="0" y="0" width="212.503" height="226.671" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="31"/>
+            <feGaussianBlur stdDeviation="8.5"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            </defs>
+          </svg>
         </span>
       </div>
-    </header>
-    <main  class="pt-8">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col items-center pt-10">
-          <div class="flex flex-col items-center lg:px-10">
-            <h1 class="font-semibold text-4xl text-center">Welcome to mistX</h1>
-            <h1 class="font-semibold text-4xl text-center">The worlds first FlashDex</h1>
-            <p class="font-light text-center text-2xl lg:px-12 mt-3">Users can now trade through Flashbots, no frontrunning and no sandwich attacks. <br/>Created by Alchemists, powered by Flashbots, driven by $mist. <br/>Join us on our quest for the philosophers stone and come explore the galaxy!</p>
-            <div class="my-8 flex flex-col items-center">
-              <a href="https://app.mistx.io" class="btn btn-primary rounded-xl text-2xl" target="_blank">Use mistX</a>
-              <a href="https://medium.com/@joshua.m.t.boylan/mistx-from-alchemist-62e0f1d74b92" class="flex mt-4" target="_blank">Find out more</a>
-            </div>
-          </div>
+      <div class="mt-4 flex flex-col items-center">
+        <a href="https://app.mistx.io" class="btn btn-primary rounded-xl text-2xl" target="_blank">
+          Go to mistX
+        </a>
+        <div class="mt-4 flex items-center text-sm font-light">
+          <span>by&nbsp;</span>
+          <img class="alchemist-logo" alt="$MIST" src="assets/img/alchemist-logo.png"/>
         </div>
-        <div class="grid md:grid-cols-3 gap-4 items-center pt-10 lg:px-10 mb-12">
-          <div class="">
-            <div class="flex flex-col items-center">
-              <div class="flex text-2xl text-center">Frontrunning Protection</div>
-            </div>
+      </div>
+    </header>
+    <main class="flex items-center min-h-screen pt-8">
+      <div class="mx-auto px-4 w-full">
+        <div class="flex items-center pt-10 main-content">
+          <div class="flex justify-center mb-8 md:mb-0 md:w-2/5">
+            <h1 class="font-semibold md:text-right">
+              <div class="text-base">The</div>
+              <div class="text-3xl">Worlds First</div>
+              <div class="text-8xl">
+                GASLESS
+                <br/>
+                DEX
+              </div>
+              <div class="text-base">powered by</div>
+              <div class="text-1xl">Flashbots</div>
+            </h1>
           </div>
-          <div class="">
-            <div class="flex flex-col items-center">
-              <div class="flex text-2xl text-center">FlashDex</div>
-            </div>
-          </div>
-          <div class="">
-            <div class="flex flex-col items-center">
-              <div class="flex text-2xl text-center">Cancel trades for free</div>
-            </div>
+          <div class="flex justify-center md:w-3/5">
+            <p class="font-light text-base lg:px-12 max-w-2xl">
+              On 05/26/2021, the Alchemist project announced the launch               
+              of mistX  - a decentralized exchange based on Flashbots technologies.
+              <br/>
+              <br/>
+              One of the most important problems of the Ethereum network, and DeFi in particular, is the damage caused by the actions of front-running bots and the associated crisis of MEV, which amounts to hundreds of millions of dollars worth of loss to users.
+              <br />
+              <br/>
+              The main losses are incurred by ordinary, non-technical users of DEXs such as Uniswap, Sushiswap and other amm Dex exchanges in the form of front-run or ‘sandwiched’ transactions.
+              <br />
+              <br/>
+              mistX is the first time in Ethereum history that FlashBots is available to regular users for front-running protection and "no success, no fee" ability on transactions.
+              <br/>
+              <a href="https://medium.com/@alchemistcoin/introducing-mistx-78066e140e13" class="color-yellow font-semibold flex mt-4" target="_blank">
+                Find out more
+              </a>
+            </p>
           </div>
         </div>
       </div>
