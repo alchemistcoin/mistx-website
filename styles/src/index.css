@@ -82,6 +82,15 @@
     
   }
 
+  .main-title {
+    text-align: right;
+  }
+
+  .title-large {
+    font-size: 6rem;
+    line-height: 1em;
+  }
+
   .color-yellow {
     color: #FFBF00;
   }
@@ -145,8 +154,16 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
+  .title-large {
+    font-size: 4rem;
+  }
+
   .main-content {
     flex-direction: column;
+  }
+
+  .main-title {
+    text-align: center;
   }
 }
