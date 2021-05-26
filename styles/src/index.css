@@ -19,6 +19,16 @@
     background-repeat: no-repeat;
     background: radial-gradient(48.8% 62.34% at 50% 0%,rgba(31,46,60,0.9) 0%,rgba(29,34,48,0) 100%);
   }
+  .bg-image {
+    position: fixed;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/img/cover_bg.png');
+    background-size: cover;
+  }
   h1 {
     @apply text-2xl font-bold pb-3 text-left;
   }
@@ -40,11 +50,11 @@
     border-bottom: 1px solid rgba(0,0,0,0.1);
     padding: 1rem 1rem;
     z-index: 2;
-    background: linear-gradient(180deg,rgba(32,47,60,1) 0%,rgb(19 26 34 / 1) 100%);
   }
   main {
     min-height: calc(100vh - 16rem);
-    background-image: url(/assets/img/bg.svg);
+    position: relative;
+    z-index: 2;
   }
   footer {
     height: 8rem;
@@ -52,17 +62,29 @@
   .logo-wrapper {
     display: flex;
     flex-direction: row;
-    margin: 1rem 0;
-    height: 5rem;
+    margin: 1rem 0 0;
+    height: 7rem;
     justify-content: center;
   }
   .logo-wrapper span {
     display: flex;
     flex-direction: column;
   }
+  .alchemist-logo {
+    height: 18px;
+    margin-left: .125rem;
+  }
   .main-bg {
     background: transparent linear-gradient(296deg, #5b5ff5 0%, #7043f5 100%) 0% 0% no-repeat
       padding-box;
+  }
+  
+  .main-content {
+    
+  }
+
+  .color-yellow {
+    color: #FFBF00;
   }
   footer {
     display: flex;
@@ -121,5 +143,11 @@
   .footer-item a > svg {
     height: 36px;
     width: auto; 
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-content {
+    flex-direction: column;
   }
 }
