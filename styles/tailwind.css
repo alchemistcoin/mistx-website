@@ -603,7 +603,7 @@ header {
   width: 100%;
   top: 0;
   position: relative;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border: none;
   padding: 1rem 1rem;
   z-index: 2;
   background: linear-gradient(180deg,rgba(32,47,60,1) 0%,rgb(19 26 34 / 1) 100%);
