@@ -659,6 +659,15 @@ footer {
 .main-content {
 }
 
+.main-title {
+  text-align: right;
+}
+
+.title-large {
+  font-size: 6rem;
+  line-height: 1em;
+}
+
 .color-yellow {
   color: #FFBF00;
 }
@@ -188325,9 +188334,17 @@ footer {
   --tw-backdrop-sepia: sepia(100%);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
+  .title-large {
+    font-size: 4rem;
+  }
+
   .main-content {
     -webkit-flex-direction: column;
             flex-direction: column;
+  }
+
+  .main-title {
+    text-align: center;
   }
 }
