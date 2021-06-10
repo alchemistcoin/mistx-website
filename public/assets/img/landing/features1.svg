@@ -1,0 +1,65 @@
+<svg width="800" height="808" viewBox="0 0 800 808" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M155 10C155 5.02944 159.029 1 164 1H655C678.748 1 698 20.2518 698 44V151C698 155.971 693.971 160 689 160H164C159.029 160 155 155.971 155 151V10Z" fill="#190134" fill-opacity="0.4" stroke="#FFBF00" stroke-width="2"/>
+<text fill="#FCFCFC" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="18" letter-spacing="0em"><tspan x="190" y="58.3">The unique technology underlying the platform uses </tspan><tspan x="190" y="88.3">Flashbots and does not publish user transactions to </tspan><tspan x="190" y="118.3">a public mempool, hiding them from frontrunners.</tspan></text>
+</g>
+<g filter="url(#filter1_d)">
+<path d="M25 249C25 225.252 44.2518 206 68 206H429C433.971 206 438 210.029 438 215V316C438 320.971 433.971 325 429 325H34C29.0294 325 25 320.971 25 316V249Z" fill="#190134" fill-opacity="0.4" stroke="#FFBF00" stroke-width="2"/>
+<text fill="#FCFCFC" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="18" letter-spacing="0em"><tspan x="60" y="259.3">Swaps can be carried out without the </tspan><tspan x="60" y="289.3">presence of ETH in the wallet for Gas.</tspan></text>
+</g>
+<g filter="url(#filter2_d)">
+<path d="M330 610C330 586.252 349.252 567 373 567H668C672.971 567 677 571.029 677 576V740C677 744.971 672.971 749 668 749H339C334.029 749 330 744.971 330 740V610Z" fill="#190134" fill-opacity="0.4" stroke="#FFBF00" stroke-width="2"/>
+<text fill="#FCFCFC" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="18" letter-spacing="0em"><tspan x="365" y="620.3">A proportion of trade value on </tspan><tspan x="365" y="650.3">mistX will be reserved to </tspan><tspan x="365" y="680.3">enrich future Alchemist </tspan><tspan x="365" y="710.3">rewards programs.</tspan></text>
+</g>
+<g filter="url(#filter3_d)">
+<path d="M232 380C232 375.029 236.029 371 241 371H732C755.748 371 775 390.252 775 414V512C775 516.971 770.971 521 766 521H241C236.029 521 232 516.971 232 512V380Z" fill="#190134" fill-opacity="0.4" stroke="#FFBF00" stroke-width="2"/>
+<text fill="#FCFCFC" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="18" letter-spacing="0em"><tspan x="267" y="424.3">There is no concept of reverts on mistX, your </tspan><tspan x="267" y="454.3">transaction is either successful with no front-running, </tspan><tspan x="267" y="484.3">or you pay nothing if you cancel it (or it fails).</tspan></text>
+</g>
+<circle cx="191.5" cy="160.5" r="7.5" fill="#FFBF00"/>
+<circle cx="401.5" cy="205.5" r="7.5" fill="#FFBF00"/>
+<circle cx="401.5" cy="324.5" r="7.5" fill="#FFBF00"/>
+<circle cx="268.5" cy="370.5" r="7.5" fill="#FFBF00"/>
+<path opacity="0.5" d="M639 566L267 522" stroke="#FFBF00" stroke-width="2"/>
+<circle cx="268.5" cy="521.5" r="7.5" fill="#FFBF00"/>
+<circle cx="640.5" cy="567.5" r="7.5" fill="#FFBF00"/>
+<path opacity="0.5" d="M190 162L402 205" stroke="#FFBF00" stroke-width="2"/>
+<path opacity="0.5" d="M402 324L267 370" stroke="#FFBF00" stroke-width="2"/>
+<defs>
+<filter id="filter0_d" x="130" y="0" width="593" height="219" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="34"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter1_d" x="0" y="205" width="463" height="179" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="34"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter2_d" x="305" y="566" width="397" height="242" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="34"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter3_d" x="207" y="370" width="593" height="210" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="34"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

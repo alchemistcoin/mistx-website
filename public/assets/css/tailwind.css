@@ -562,9 +562,6 @@ body {
   -moz-osx-font-smoothing: auto;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  background-position: 0 -30vh;
-  background-repeat: no-repeat;
-  background: radial-gradient(48.8% 62.34% at 50% 0%,rgba(31,46,60,0.9) 0%,rgba(29,34,48,0) 100%);
 }
 
 .bg-image {
@@ -594,18 +591,31 @@ h2 {
   text-align: left;
 }
 
+b {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .btn {
   border-radius: 0.25rem;
   font-weight: 700;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  padding-top: .875rem;
+  padding-bottom: .875rem;
 }
 
 .btn-primary {
   background: #FFBF00;
   color: #000;
+}
+
+.bulleted {
+  list-style-type: square;
 }
 
 header {
@@ -620,12 +630,6 @@ header {
 
 main {
   min-height: calc(100vh - 16rem);
-  position: relative;
-  z-index: 2;
-}
-
-footer {
-  height: 8rem;
 }
 
 .logo-wrapper {
@@ -673,8 +677,21 @@ footer {
   text-align: right;
 }
 
+.main-title:before {
+  background-image: url('../img/landing/title-accent-graphic.svg');
+  background-repeat: no-repeat;
+  content: '';
+  height: 20rem;
+  left: -12.5rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-38%) rotate(180deg);
+          transform: translateY(-38%) rotate(180deg);
+  width: 10rem;
+}
+
 .title-large {
-  font-size: 6rem;
+  font-size: 8rem;
   line-height: 1em;
 }
 
@@ -682,46 +699,139 @@ footer {
   color: #FFBF00;
 }
 
-footer {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  top: 0px;
-  position: relative;
-  padding: 1rem;
-  z-index: 0;
+.intro-img {
 }
 
-.footer-container {
-  display: -webkit-flex;
-  display: flex;
+.robots-bg {
+  background-image: url('../img/landing/robots-bg.png');
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
-.footer-wrapper {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  top: 0px;
-  position: relative;
-  z-index: 2;
+.robots-container {
+  padding: 10rem 0 8rem;
+}
+
+.robot-3 {
+  top: 9rem;
+}
+
+.features {
+  margin-top: 15rem;
+}
+
+.features-title {
+  font-size: 3rem;
+  line-height: 1.35em;
+  margin-left: -4rem;
+}
+
+.features-title:before {
+  background-image: url('../img/landing/title-accent-graphic.svg');
+  background-repeat: no-repeat;
+  content: '';
+  height: 20rem;
+  right: -12.5rem;
+  position: absolute;
+  width: 10rem;
+}
+
+.features-title-lg {
+  font-size: 25rem;
+  line-height: .9em;
+}
+
+.features-title-sm {
+  margin-top: 4.875rem;
+  margin-left: -1rem;
+}
+
+.about-title {
+}
+
+.about-title:before {
+  background-image: url('../img/landing/title-accent-graphic.svg');
+  background-repeat: no-repeat;
+  content: '';
+  height: 20rem;
+  left: -12.5rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-45%) rotate(180deg);
+          transform: translateY(-45%) rotate(180deg);
+  width: 10rem;
+}
+
+.about-title-lg {
+  font-size: 10rem;
+  line-height: .875em;
+}
+
+.about-title-sm {
+  font-size: 3.25rem;
+  line-height: 1.2em;
+}
+
+.about-alchemist-logo {
+  height: 60px;
+  margin-top: 110px;
+}
+
+.footer {
+  background-image: url('../img/landing/footer-graphic.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.footer-title {
+  padding-bottom: 8.5rem;
+  padding-top: 12.5rem;
+}
+
+.footer-title:before {
+  background-image: url('../img/landing/title-accent-graphic.svg');
+  background-repeat: no-repeat;
+  content: '';
+  height: 20rem;
+  right: -12.5rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  width: 10rem;
+}
+
+.footer-title-lg {
+  font-size: 6.125rem;
+  line-height: .835em;
+}
+
+.footer-title-md {
+  font-size: 3.25rem;
+  line-height: 1.5em;
+  margin-top: -0.75rem;
+}
+
+.footer-title-sm {
+  font-size: 2.5rem;
+  line-height: 1.4em;
+}
+
+.footer-line {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
+  height: 2px;
+  -webkit-flex: 1;
+          flex: 1;
 }
 
 .footer-item {
   display: -webkit-flex;
   display: flex;
   position: relative;
-  margin: 0px 0.5rem;
-  width: 2.25rem;
-  height: 2.25rem;
+  margin: 0px 1rem;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
 .footer-item a {
@@ -743,8 +853,8 @@ footer {
   left: -2px;
   opacity: 0;
   transition: opacity 0.2s ease-in 0s;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .footer-item-icon > svg {
@@ -753,20 +863,22 @@ footer {
 }
 
 .footer-item a > svg {
-  height: 36px;
+  height: 3.75rem;
   width: auto;
 }
 
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
     .sm\:container {
       max-width: 640px;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
   }
 
@@ -779,6 +891,8 @@ footer {
   @media (min-width: 1024px) {
     .sm\:container {
       max-width: 1024px;
+      padding-right: 3.75rem;
+      padding-left: 3.75rem;
     }
   }
 
@@ -2731,7 +2845,7 @@ footer {
 
   .sm\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .sm\:bg-secondary {
@@ -3164,7 +3278,7 @@ footer {
 
   .group:hover .sm\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-secondary {
@@ -3597,7 +3711,7 @@ footer {
 
   .sm\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-secondary:focus-within {
@@ -4030,7 +4144,7 @@ footer {
 
   .sm\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-secondary:hover {
@@ -4463,7 +4577,7 @@ footer {
 
   .sm\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .sm\:focus\:bg-secondary:focus {
@@ -24901,6 +25015,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .sm\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .sm\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .sm\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .group:hover .sm\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -25317,6 +25446,21 @@ footer {
   .group:hover .sm\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-transparent:focus-within {
@@ -25737,6 +25881,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .sm\:focus-within\:text-primary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .sm\:focus-within\:text-secondary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .sm\:focus-within\:text-danger:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -26155,6 +26314,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .sm\:hover\:text-primary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .sm\:hover\:text-secondary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .sm\:hover\:text-danger:hover {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -26571,6 +26745,21 @@ footer {
   .sm\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .sm\:focus\:text-primary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .sm\:focus\:text-secondary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .sm\:focus\:text-danger:focus {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .sm\:text-opacity-0 {
@@ -31995,13 +32184,15 @@ footer {
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
     .md\:container {
       max-width: 640px;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
   }
 
@@ -32014,6 +32205,8 @@ footer {
   @media (min-width: 1024px) {
     .md\:container {
       max-width: 1024px;
+      padding-right: 3.75rem;
+      padding-left: 3.75rem;
     }
   }
 
@@ -33966,7 +34159,7 @@ footer {
 
   .md\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .md\:bg-secondary {
@@ -34399,7 +34592,7 @@ footer {
 
   .group:hover .md\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-secondary {
@@ -34832,7 +35025,7 @@ footer {
 
   .md\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-secondary:focus-within {
@@ -35265,7 +35458,7 @@ footer {
 
   .md\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-secondary:hover {
@@ -35698,7 +35891,7 @@ footer {
 
   .md\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .md\:focus\:bg-secondary:focus {
@@ -56136,6 +56329,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .md\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .md\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .md\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .group:hover .md\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -56552,6 +56760,21 @@ footer {
   .group:hover .md\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-transparent:focus-within {
@@ -56972,6 +57195,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .md\:focus-within\:text-primary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .md\:focus-within\:text-secondary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .md\:focus-within\:text-danger:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -57390,6 +57628,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .md\:hover\:text-primary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .md\:hover\:text-secondary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .md\:hover\:text-danger:hover {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -57806,6 +58059,21 @@ footer {
   .md\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .md\:focus\:text-primary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .md\:focus\:text-secondary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .md\:focus\:text-danger:focus {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .md\:text-opacity-0 {
@@ -63230,13 +63498,15 @@ footer {
 @media (min-width: 1024px) {
   .lg\:container {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
     .lg\:container {
       max-width: 640px;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
   }
 
@@ -63249,6 +63519,8 @@ footer {
   @media (min-width: 1024px) {
     .lg\:container {
       max-width: 1024px;
+      padding-right: 3.75rem;
+      padding-left: 3.75rem;
     }
   }
 
@@ -65201,7 +65473,7 @@ footer {
 
   .lg\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .lg\:bg-secondary {
@@ -65634,7 +65906,7 @@ footer {
 
   .group:hover .lg\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-secondary {
@@ -66067,7 +66339,7 @@ footer {
 
   .lg\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-secondary:focus-within {
@@ -66500,7 +66772,7 @@ footer {
 
   .lg\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-secondary:hover {
@@ -66933,7 +67205,7 @@ footer {
 
   .lg\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .lg\:focus\:bg-secondary:focus {
@@ -87371,6 +87643,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .lg\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .lg\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .lg\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .group:hover .lg\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -87787,6 +88074,21 @@ footer {
   .group:hover .lg\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-transparent:focus-within {
@@ -88207,6 +88509,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .lg\:focus-within\:text-primary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .lg\:focus-within\:text-secondary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .lg\:focus-within\:text-danger:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -88625,6 +88942,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .lg\:hover\:text-primary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .lg\:hover\:text-secondary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .lg\:hover\:text-danger:hover {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -89041,6 +89373,21 @@ footer {
   .lg\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .lg\:focus\:text-primary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .lg\:focus\:text-secondary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .lg\:focus\:text-danger:focus {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .lg\:text-opacity-0 {
@@ -94465,13 +94812,15 @@ footer {
 @media (min-width: 1280px) {
   .xl\:container {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
     .xl\:container {
       max-width: 640px;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
   }
 
@@ -94484,6 +94833,8 @@ footer {
   @media (min-width: 1024px) {
     .xl\:container {
       max-width: 1024px;
+      padding-right: 3.75rem;
+      padding-left: 3.75rem;
     }
   }
 
@@ -96436,7 +96787,7 @@ footer {
 
   .xl\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .xl\:bg-secondary {
@@ -96869,7 +97220,7 @@ footer {
 
   .group:hover .xl\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-secondary {
@@ -97302,7 +97653,7 @@ footer {
 
   .xl\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-secondary:focus-within {
@@ -97735,7 +98086,7 @@ footer {
 
   .xl\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-secondary:hover {
@@ -98168,7 +98519,7 @@ footer {
 
   .xl\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .xl\:focus\:bg-secondary:focus {
@@ -118606,6 +118957,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .xl\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .xl\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .xl\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .group:hover .xl\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -119022,6 +119388,21 @@ footer {
   .group:hover .xl\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-transparent:focus-within {
@@ -119442,6 +119823,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .xl\:focus-within\:text-primary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .xl\:focus-within\:text-secondary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .xl\:focus-within\:text-danger:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -119860,6 +120256,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .xl\:hover\:text-primary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .xl\:hover\:text-secondary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .xl\:hover\:text-danger:hover {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -120276,6 +120687,21 @@ footer {
   .xl\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .xl\:focus\:text-primary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .xl\:focus\:text-secondary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .xl\:focus\:text-danger:focus {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .xl\:text-opacity-0 {
@@ -125700,13 +126126,15 @@ footer {
 @media (min-width: 1536px) {
   .\32xl\:container {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   @media (min-width: 640px) {
     .\32xl\:container {
       max-width: 640px;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
   }
 
@@ -125719,6 +126147,8 @@ footer {
   @media (min-width: 1024px) {
     .\32xl\:container {
       max-width: 1024px;
+      padding-right: 3.75rem;
+      padding-left: 3.75rem;
     }
   }
 
@@ -127671,7 +128101,7 @@ footer {
 
   .\32xl\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-secondary {
@@ -128104,7 +128534,7 @@ footer {
 
   .group:hover .\32xl\:group-hover\:bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-secondary {
@@ -128537,7 +128967,7 @@ footer {
 
   .\32xl\:focus-within\:bg-primary:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-secondary:focus-within {
@@ -128970,7 +129400,7 @@ footer {
 
   .\32xl\:hover\:bg-primary:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-secondary:hover {
@@ -129403,7 +129833,7 @@ footer {
 
   .\32xl\:focus\:bg-primary:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+    background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus\:bg-secondary:focus {
@@ -149841,6 +150271,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .\32xl\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .\32xl\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .\32xl\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .group:hover .\32xl\:group-hover\:text-transparent {
     color: transparent;
   }
@@ -150257,6 +150702,21 @@ footer {
   .group:hover .\32xl\:group-hover\:text-pink-900 {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:text-danger {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-transparent:focus-within {
@@ -150677,6 +151137,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .\32xl\:focus-within\:text-primary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus-within\:text-secondary:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus-within\:text-danger:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .\32xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -151095,6 +151570,21 @@ footer {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
+  .\32xl\:hover\:text-primary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .\32xl\:hover\:text-secondary:hover {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .\32xl\:hover\:text-danger:hover {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
+  }
+
   .\32xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -151511,6 +152001,21 @@ footer {
   .\32xl\:focus\:text-pink-900:focus {
     --tw-text-opacity: 1;
     color: rgba(131, 24, 67, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus\:text-primary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 191, 0, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus\:text-secondary:focus {
+    --tw-text-opacity: 1;
+    color: rgba(255, 237, 74, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus\:text-danger:focus {
+    --tw-text-opacity: 1;
+    color: rgba(227, 52, 47, var(--tw-text-opacity));
   }
 
   .\32xl\:text-opacity-0 {
@@ -156934,13 +157439,15 @@ footer {
 
 .container {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -156953,6 +157460,8 @@ footer {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
   }
 }
 
@@ -158905,7 +159414,7 @@ footer {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+  background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -159338,7 +159847,7 @@ footer {
 
 .group:hover .group-hover\:bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+  background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-secondary {
@@ -159771,7 +160280,7 @@ footer {
 
 .focus-within\:bg-primary:focus-within {
   --tw-bg-opacity: 1;
-  background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+  background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-secondary:focus-within {
@@ -160204,7 +160713,7 @@ footer {
 
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+  background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
 }
 
 .hover\:bg-secondary:hover {
@@ -160637,7 +161146,7 @@ footer {
 
 .focus\:bg-primary:focus {
   --tw-bg-opacity: 1;
-  background-color: rgba(52, 144, 220, var(--tw-bg-opacity));
+  background-color: rgba(255, 191, 0, var(--tw-bg-opacity));
 }
 
 .focus\:bg-secondary:focus {
@@ -181088,6 +181597,21 @@ footer {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgba(255, 191, 0, var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgba(255, 237, 74, var(--tw-text-opacity));
+}
+
+.text-danger {
+  --tw-text-opacity: 1;
+  color: rgba(227, 52, 47, var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:text-transparent {
   color: transparent;
 }
@@ -181504,6 +182028,21 @@ footer {
 .group:hover .group-hover\:text-pink-900 {
   --tw-text-opacity: 1;
   color: rgba(131, 24, 67, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-primary {
+  --tw-text-opacity: 1;
+  color: rgba(255, 191, 0, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-secondary {
+  --tw-text-opacity: 1;
+  color: rgba(255, 237, 74, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-danger {
+  --tw-text-opacity: 1;
+  color: rgba(227, 52, 47, var(--tw-text-opacity));
 }
 
 .focus-within\:text-transparent:focus-within {
@@ -181924,6 +182463,21 @@ footer {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
+.focus-within\:text-primary:focus-within {
+  --tw-text-opacity: 1;
+  color: rgba(255, 191, 0, var(--tw-text-opacity));
+}
+
+.focus-within\:text-secondary:focus-within {
+  --tw-text-opacity: 1;
+  color: rgba(255, 237, 74, var(--tw-text-opacity));
+}
+
+.focus-within\:text-danger:focus-within {
+  --tw-text-opacity: 1;
+  color: rgba(227, 52, 47, var(--tw-text-opacity));
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -182342,6 +182896,21 @@ footer {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 191, 0, var(--tw-text-opacity));
+}
+
+.hover\:text-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 237, 74, var(--tw-text-opacity));
+}
+
+.hover\:text-danger:hover {
+  --tw-text-opacity: 1;
+  color: rgba(227, 52, 47, var(--tw-text-opacity));
+}
+
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -182758,6 +183327,21 @@ footer {
 .focus\:text-pink-900:focus {
   --tw-text-opacity: 1;
   color: rgba(131, 24, 67, var(--tw-text-opacity));
+}
+
+.focus\:text-primary:focus {
+  --tw-text-opacity: 1;
+  color: rgba(255, 191, 0, var(--tw-text-opacity));
+}
+
+.focus\:text-secondary:focus {
+  --tw-text-opacity: 1;
+  color: rgba(255, 237, 74, var(--tw-text-opacity));
+}
+
+.focus\:text-danger:focus {
+  --tw-text-opacity: 1;
+  color: rgba(227, 52, 47, var(--tw-text-opacity));
 }
 
 .text-opacity-0 {
