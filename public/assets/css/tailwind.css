@@ -562,6 +562,8 @@ body {
   -moz-osx-font-smoothing: auto;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .bg-image {

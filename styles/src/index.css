@@ -15,7 +15,7 @@
     @apply text-white subpixel-antialiased;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
   }
   .bg-image {
