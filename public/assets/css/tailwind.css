@@ -560,21 +560,13 @@ body {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+  background-image: url('/assets/img/landing/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
   width: 100%;
-}
-
-.bg-image {
-  position: fixed;
-  z-index: 0;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-image: url('/assets/img/cover_bg.png');
-  background-size: cover;
 }
 
 h1 {
@@ -620,6 +612,10 @@ b {
   list-style-type: square;
 }
 
+.nav {
+  padding-top: 2.375rem;
+}
+
 header {
   -webkit-flex-direction: row;
           flex-direction: row;
@@ -655,7 +651,6 @@ main {
   font-size: 18px;
   height: 60px;
   margin-left: 2.375rem;
-  margin-top: 2.375rem;
   padding: 0 2.375rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
