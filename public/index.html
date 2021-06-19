@@ -166,6 +166,7 @@
     }
 
     function trackCTAClick() {
+      if (!window.fathom) return;
       window.fathom.trackGoal('BTEYLTFG', 0);
     }
   </script>
