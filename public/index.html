@@ -71,8 +71,8 @@
         </span>
       </div>
       <div class="mt-4 flex flex-col items-center">
-        <a href="https://app.mistx.io" class="btn btn-primary rounded-xl text-2xl" target="_blank">
-          Go to mistX
+        <a href="https://app.mistx.io" id="primary-cta" class="btn btn-primary rounded-xl text-2xl">
+          USE mistX
         </a>
         <div class="mt-4 flex items-center text-sm font-light">
           <span>by&nbsp;</span>
@@ -154,4 +154,19 @@
       </div>
     </footer>
   </body>
+  <script type="text/javascript">
+    let trackedCTA = false;
+    document.getElementById('primary-cta').onclick = function handleCTAClick(e) {
+      e.preventDefault();
+      if (!trackedCTA) {
+        trackCTAClick();
+        trackedCTA = true;
+      }
+      window.location = this.href;
+    }
+
+    function trackCTAClick() {
+      window.fathom.trackGoal('BTEYLTFG', 0);
+    }
+  </script>
 </html>
