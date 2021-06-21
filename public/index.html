@@ -43,8 +43,13 @@
     <!-- / Fathom -->
   </head>
   <body>
-    <div class="bg-image"></div>
-    <header class="min-h-screen flex flex-col items-center justify-center">
+    <nav class="nav">
+      <div class="mt-4 flex items-center text-sm font-light">
+        <span>by&nbsp;</span>
+        <img class="alchemist-logo" alt="$MIST" src="assets/img/alchemist-logo.svg"/>
+      </div>
+    </nav>
+    <header class="flex flex-col items-center justify-center">
       <div class="logo-wrapper">
         <span>
           <svg width="213" height="227" viewBox="0 0 213 227" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,51 +75,131 @@
           </svg>
         </span>
       </div>
+      <h1 class="pb-12 text-6xl text-center">
+        mistX.io
+      </h1>
+      <ul class="flex justify-center">
+        <li>
+          <h3>
+            Before mistX
+          </h3>
+          <p>
+            Trading is like the wild west - each trade you make the bots take their cut.
+          </p>
+        </li>
+        <li>
+          <h3>
+            After mistX
+          </h3>
+          <p>
+            Enjoy safe and fair trading with Flashbots technology.
+          </p>
+        </li>
+      </ul>
       <div class="mt-4 flex flex-col items-center">
-        <a href="https://app.mistx.io" id="primary-cta" class="btn btn-primary rounded-xl text-2xl">
-          USE mistX
+        <a href="https://app.mistx.io" id="primary-cta" class="btn btn-primary flex items-center justify-center">
+          USE mistX SWAP
         </a>
-        <div class="mt-4 flex items-center text-sm font-light">
-          <span>by&nbsp;</span>
-          <img class="alchemist-logo" alt="$MIST" src="assets/img/alchemist-logo.svg"/>
-        </div>
       </div>
     </header>
-    <main class="flex items-center pt-8">
-      <div class="mx-auto px-4 w-full">
-        <div class="flex items-center pt-10 main-content">
-          <div class="flex justify-center mb-8 md:mb-0 md:w-2/5">
-            <h1 class="font-semibold main-title">
-              <div class="text-base">The</div>
-              <div class="text-3xl">Worlds First</div>
-              <div class="title-large">
-                FlashDEX
-              </div>
-              <div class="text-base">powered by</div>
-              <div class="text-1xl">Flashbots</div>
-            </h1>
+    <main>
+      <section class="features-wrapper">
+        <h2 class="section-title text-center">
+          4 key features of mistX
+        </h2>
+        <ul class="flex flex-wrap features mx-auto">
+          <li class="flex w-1/2">
+            <div>
+              <span class="inline-block feature-number">
+                1
+              </span>
+            </div>
+            <div class="feature-content">
+              <h4 class="feature-title">
+                Flashbots!
+              </h4>
+              <p class="feature-paragraph">
+                The unique technology underlying the platform uses Flashbots and does not publish user transactions to a public mempool. Frontrunners be gone.
+              </p>
+            </div>
+          </li>
+          <li class="flex w-1/2">
+            <div>
+              <span class="inline-block feature-number">
+                2
+              </span>
+            </div>
+            <div class="feature-content">
+              <h4 class="feature-title">
+                NO ETH? No problem
+              </h4>
+              <p class="feature-paragraph">
+                Swaps can be carried out without the presence of Eth in the wallet.
+              </p>
+            </div>
+          </li>
+          <li class="flex w-1/2">
+            <div>
+              <span class="inline-block feature-number">
+                3
+              </span>
+            </div>
+            <div class="feature-content">
+              <h4 class="feature-title">
+                Failed swap? No fees
+              </h4>
+              <p class="feature-paragraph">
+                There is no concept of reverts on mistX. Your transaction is either successful or you pay nothing. 
+              </p>
+            </div>
+          </li>
+          <li class="flex w-1/2">
+            <div>
+              <span class="inline-block feature-number">
+                4
+              </span>
+            </div>
+            <div class="feature-content">
+              <h4 class="feature-title">
+                Self-sustaining
+              </h4>
+              <p class="feature-paragraph">
+                A proportion of trade value on mistX will be reserved to enrich future Alchemist rewards programs.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="section-title text-center">
+          Who are we?
+        </h2>
+        <p>
+          With the help of mistX, you can continue to take full advantage of Uniswap's liquidity pools without being exposed to the risk of frontrunning.
+        </p>
+        <div class="flex">
+          <div class="w-1/2 flex">
+            <div>
+
+            </div>
+            <div>
+              About <b>FlashBots</b>
+              <br />
+              Flashbots is a research and development organization working on mitigating the negative externalities of current MEV extraction techniques and avoiding the existential risks MEV could cause to state-rich blockchains like Ethereum.
+            </div>
           </div>
-          <div class="flex justify-center md:w-3/5">
-            <p class="font-light text-base lg:px-12 max-w-2xl">
-              On 05/26/2021, the Alchemist project announced the launch               
-              of mistX  - a decentralized exchange based on Flashbots technologies.
-              <br/>
-              <br/>
-              One of the most important problems of the Ethereum network, and DeFi in particular, is the damage caused by the actions of front-running bots and the associated crisis of MEV, which amounts to hundreds of millions of dollars worth of loss to users.
+          <div class="w-1/2 flex">
+            <div>
+
+            </div>
+            <div>
+              About <b>Alchemist</b>
               <br />
-              <br/>
-              The main losses are incurred by ordinary, non-technical users of DEXs such as Uniswap, Sushiswap and other AMM Dex exchanges in the form of front-run or ‘sandwiched’ transactions.
-              <br />
-              <br/>
-              mistX is the first time in Ethereum history that FlashBots is available to regular users for front-running protection and "no success, no fee" transactions.
-              <br/>
-              <a href="https://medium.com/@alchemistcoin/introducing-mistx-78066e140e13" class="color-yellow font-semibold flex mt-4" target="_blank">
-                Find out more
-              </a>
-            </p>
+              Alchemist is a community project started with a tweet by @thegostep. There is no “dev team”. There is no company. There is only a community of alchemists figuring out what to build in the open.
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="mt-12">
       <div class="footer-container">

@@ -595,17 +595,27 @@ h2 {
 }
 
 .btn {
-  border-radius: 0.25rem;
   font-weight: 700;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .btn-primary {
   background: #FFBF00;
+  border-radius: 45px;
   color: #000;
+  font-size: 1.875rem;
+  height: 5.625rem;
+  padding: 0 3.75rem;
+  position: relative;
+  &:after {
+    background: linear-gradient(180deg, #FFBF00 -26.11%, rgba(255, 191, 0, 0) 58.89%);
+    border-radius: 45px;
+    content: '';
+    height: 5.625rem;
+    opacity: 0.5;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
 }
 
 header {
@@ -634,7 +644,7 @@ footer {
   -webkit-flex-direction: row;
           flex-direction: row;
   margin: 1rem 0 0;
-  height: 7rem;
+  height: 13.5rem;
   -webkit-justify-content: center;
           justify-content: center;
 }
@@ -670,6 +680,10 @@ footer {
 
 .color-yellow {
   color: #FFBF00;
+}
+
+.features {
+  max-width: 1200px;
 }
 
 footer {

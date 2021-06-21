@@ -36,11 +36,28 @@
     @apply text-xl font-bold pb-3 text-left;
   }
   .btn {
-    @apply font-bold py-2 px-4 rounded;
+    @apply font-bold;
   }
+
   .btn-primary {
     background: #FFBF00;
+    border-radius: 45px;
     color: #000;
+    font-size: 1.875rem;
+    height: 5.625rem;
+    padding: 0 3.75rem;
+    position: relative;
+
+    &:after {
+      background: linear-gradient(180deg, #FFBF00 -26.11%, rgba(255, 191, 0, 0) 58.89%);
+      border-radius: 45px;
+      content: '';
+      height: 5.625rem;
+      opacity: 0.5;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+    }
   }
   header { 
     flex-direction: row;
@@ -62,7 +79,7 @@
     display: flex;
     flex-direction: row;
     margin: 1rem 0 0;
-    height: 7rem;
+    height: 13.5rem;
     justify-content: center;
   }
   .logo-wrapper span {
@@ -94,6 +111,11 @@
   .color-yellow {
     color: #FFBF00;
   }
+
+  .features {
+    max-width: 1200px;
+  }
+
   footer {
     display: flex;
     -webkit-box-align: center;
