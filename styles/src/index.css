@@ -29,10 +29,13 @@
     font-size: 3.25rem;
     line-height: 4.875rem;
   }
+  h3 {
+    @apply text-3xl font-bold mb-6;
+  }
   h4 {
     @apply font-bold;
     font-size: 2rem;
-    line-height: 1.375rem;
+    line-height: 1.375em;
   }
 
   b {
@@ -64,11 +67,14 @@
     background-size: cover;
   }
 
+  /* nav */
   .nav {
     @apply w-full flex justify-between;
     padding-top: 2.375rem;
   }
+
   .nav-btn {
+    @apply flex items-center justify-center;
     border-radius: 30px;
     font-size: 18px;
     height: 60px;
@@ -82,6 +88,11 @@
     margin-right: 3.75rem;
   }
 
+  .nav-cta {
+
+  }
+
+  /* header */
   .main-cta {
     border-radius: 45px;
     font-size: 1.875rem;
@@ -129,16 +140,16 @@
     margin-bottom: 1.5rem;
   }
   .header-item {
+    @apply w-1/2;
     border-left: 2px solid #FFBF00;
   }
   .header-item:first-child {
     border-left: 0;
   }
   .header-item-desc {
-    @apply text-xl font-light;
+    @apply text-xl font-normal;
     max-width: 30rem;
   }
-
 
   .main-bg {
     background: transparent linear-gradient(296deg, #5b5ff5 0%, #7043f5 100%) 0% 0% no-repeat
@@ -170,14 +181,12 @@
     padding-top: 11rem;
   }
 
-  .features {
-    max-width: 1200px;
-  }
   .features-title {
     margin-bottom: 4.875rem;
   }
 
   .feature {
+    @apply flex w-1/2;
     margin-bottom: 6.25rem;
   }
   .feature:nth-child(2n-1) {
@@ -207,7 +216,7 @@
   }
 
   .feature-paragraph {
-    @apply text-lg font-light;
+    @apply text-lg font-normal;
   }
 
   .about-wrapper {
@@ -215,7 +224,7 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 7rem 1rem 6rem
+    padding: 7rem 0 6rem;
   }
 
   .about-title {
@@ -229,7 +238,12 @@
     margin-bottom: 3.75rem;
   }
 
+  .about-list {
+    @apply container mx-auto flex;
+  }
+
   .about-item {
+    @apply flex w-1/2;
     padding: 0 4.25rem;
   }
 
@@ -240,29 +254,16 @@
     padding-left: 3rem;
   }
 
+  .about-img {
+
+  }
+
   .footer {
-    
+    @apply mt-40 flex flex-col items-center;
   }
   
-  .footer-title {
-    padding-bottom: 8.5rem;
-    padding-top: 12.5rem;
-  }
-
-  .footer-title-lg {
-    font-size: 6.125rem;
-    line-height: .835em;
-  }
-
-  .footer-title-md {
-    font-size: 3.25rem;
-    line-height: 1.5em;
-    margin-top: -0.75rem;
-  }
-
-  .footer-title-sm {
-    font-size: 2.5rem;
-    line-height: 1.4em;
+  .footer-links {
+    @apply flex justify-end text-sm font-bold mb-2;
   }
 
   .footer-line {
@@ -272,7 +273,7 @@
   }
 
   .footer-item {
-    display: flex;
+    @apply flex;
     position: relative;
     margin: 0px 1rem;
     width: 3.75rem;
@@ -308,6 +309,10 @@
   }
 }
 
+.show-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .title-large {
     font-size: 4rem;
@@ -319,5 +324,221 @@
 
   .main-title {
     text-align: center;
+  }
+}
+
+/** Mobile **/
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    @apply text-left;
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+
+  h3 {
+    margin-bottom: .5rem;
+    line-height: 1.5em;
+  }
+
+  .nav {
+    @apply justify-center;
+    padding-top: 3.5rem;
+  }
+
+  .nav-btn {
+    height: 2.625rem;
+    padding: 0 1.5rem;
+  }
+  .nav-btn:first-child {
+    margin: 0;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .alchemist-logo-wrapper {
+    font-size: 13px;
+  }
+
+  .alchemist-logo {
+    height: 18px;
+  }
+
+  .logo-wrapper {
+    margin: 2.5rem 0 1.25rem;
+    height: 168px;
+  }
+
+  .main-cta {
+    border-radius: 26px;
+    font-size: 1.125rem;
+    height: 3.375rem;
+    padding: 0 2.25rem;
+  }
+  .main-cta:after {
+    border-radius: 26px;
+    height: 3.375rem;
+  }
+
+  /* header */
+  .header-list {
+    margin: 0;
+  }
+
+  .header-item {
+    @apply w-full text-left;
+    border: 0;
+    margin-bottom: 2.5rem;
+  }
+  .header-item:nth-child(2n-1) {
+    padding-right: 4rem;
+  }
+  .header-item:nth-child(2n) {
+    @apply text-right;
+    padding-left: 4rem;
+  }
+  .header-item:last-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .header-item_title {
+    font-size: 1rem;
+    position: relative;
+  }
+  .header-item_title:after {
+    background-color: #FFBF00;
+    content: '';
+    width: 2px;
+    height: 100%;
+    left: -1.25rem;
+    position: absolute;
+  }
+
+  .header-item:nth-child(2n) .header-item_title:after {
+    left: auto;
+    right: -1.25rem;
+  }
+
+  .header-item-desc {
+    font-size: .75rem;
+    line-height: 1.1875rem;
+  }
+
+  /* feature */
+  .features-wrapper {
+    background-image: url('../img/landing/bg2.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 9rem;
+  }
+
+  .features-title {
+    border-left: 2px solid #FFBF00;
+    margin-bottom: 2.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .feature {
+    @apply w-full;
+    margin-bottom: 2.5rem;
+  }
+  .feature:nth-child(2n-1),
+  .feature:nth-child(2n) {
+    padding: 0 .25rem;
+  }
+
+  .feature-title {
+    @apply font-normal uppercase;
+    font-size: .875rem;
+    line-height: 1.5em;
+    margin-bottom: .5rem;
+  }
+
+  .feature-content {
+    padding: 0;
+  }
+
+  .feature-paragraph {
+    font-size: .75rem;
+    line-height: 1.583em;
+  }
+
+  .about-title {
+    @apply mb-8 px-6;
+    border-left: 2px solid #FFBF00;
+  }
+
+  .about-description {
+    @apply container mb-8 uppercase text-left;
+    font-size: .875rem;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    padding: 0 1.5rem;
+  }
+
+  .about-list {
+    @apply flex-col;
+  }
+
+  .about-item {
+    @apply w-full flex-col;
+    padding: 0;
+  }
+
+  .about-text {
+    font-size: .75rem;
+    line-height: 1.66em;
+    padding: 1.5rem 0;
+  }
+
+  .about-img-wrapper {
+    height: 4.5rem;
+  }
+
+  .about-img {
+    height: 100%;
+    width: auto;
+  }
+
+  .footer {
+    @apply mt-20;
+  }
+
+  .footer-links {
+    @apply justify-center w-full mb-6;
+  }
+
+  .footer-item {
+    margin: 0 0.5rem;
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+
+  .footer-item a > svg {
+    height: 2.75rem;
+  }
+
+  .footer-item-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .footer-line {
+    @apply hidden;
+  }
+
+  .show-mobile {
+    display: initial;
   }
 }
