@@ -232,7 +232,7 @@
   }
 
   .about-description {
-    @apply mx-auto font-light text-center;
+    @apply container mx-auto font-light text-center;
     font-size: 1.875rem;
     line-height: 1.466em;
     margin-bottom: 3.75rem;
@@ -480,7 +480,7 @@
   }
 
   .about-description {
-    @apply container mb-8 uppercase text-left;
+    @apply mb-8 uppercase text-left;
     font-size: .875rem;
     line-height: 1.5em;
     letter-spacing: 2px;

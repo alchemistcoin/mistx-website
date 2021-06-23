@@ -835,6 +835,10 @@ main {
 }
 
 .about-description {
+  max-width: 1240px;
+  width: 100%;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
   font-weight: 300;
   margin-left: auto;
   margin-right: auto;
@@ -188867,10 +188871,6 @@ main {
   }
 
   .about-description {
-    max-width: 1240px;
-    width: 100%;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
     margin-bottom: 2rem;
     text-align: left;
     text-transform: uppercase;
