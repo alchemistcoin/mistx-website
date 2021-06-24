@@ -46,11 +46,11 @@
     <div class="particles-wrapper">
       <header class="header-wrapper">
         <nav class="nav flex justify-between">
-          <div class="nav-btn alchemist-logo-wrapper font-light">
+          <a class="nav-btn alchemist-logo-wrapper font-light" href="https://docs.alchemist.wt" target="_blank">
             <span class="opacity-50"}>a product by&nbsp;</span>
             <img class="alchemist-logo" alt="$MIST" src="assets/img/alchemist-logo.svg"/>
-          </div>
-          <a class="nav-btn nav-cta btn-primary" href="https://app.mistx.io" id="primary-cta">
+          </a>
+          <a class="nav-btn nav-cta btn-primary" href="https://app.mistx.io" id="header-cta">
             Swap on mistX
           </a>
         </nav>
@@ -340,22 +340,6 @@
       </section>
     </main>  
   </body>
-  <script type="text/javascript">
-    let trackedCTA = false;
-    document.getElementById('primary-cta').onclick = function handleCTAClick(e) {
-      e.preventDefault();
-      if (!trackedCTA) {
-        trackCTAClick();
-        trackedCTA = true;
-      }
-      window.location = this.href;
-    }
-
-    function trackCTAClick() {
-      if (!window.fathom) return;
-      window.fathom.trackGoal('BTEYLTFG', 0);
-    }
-  </script>
   <script src="/assets/js/particles.min.js"></script>
   <script src="/assets/js/main.js"></script>
 </html>

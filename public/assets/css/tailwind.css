@@ -27296,6 +27296,7 @@ main {
 
   .\32xl\:select-all {
     -webkit-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -58555,6 +58556,7 @@ main {
 
   .xl\:select-all {
     -webkit-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -89814,6 +89816,7 @@ main {
 
   .lg\:select-all {
     -webkit-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -121073,6 +121076,7 @@ main {
 
   .md\:select-all {
     -webkit-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -152332,6 +152336,7 @@ main {
 
   .sm\:select-all {
     -webkit-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -183603,6 +183608,7 @@ main {
 
 .select-all {
   -webkit-user-select: all;
+      -ms-user-select: all;
           user-select: all;
 }
 
