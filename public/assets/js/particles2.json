@@ -8,7 +8,7 @@
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#599da6"
       },
       "shape": {
         "type": "circle",
@@ -55,7 +55,7 @@
       "move": {
         "enable": true,
         "speed": 1,
-        "direction": "top",
+        "direction": "bottom",
         "random": true,
         "straight": false,
         "out_mode": "out",

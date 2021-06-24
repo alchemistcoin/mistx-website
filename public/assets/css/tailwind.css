@@ -188964,6 +188964,11 @@ main {
   z-index: 1;
 }
 
+.particles-js-blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
 .header-fade {
   position: absolute;
   top: 0;
