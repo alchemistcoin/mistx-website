@@ -630,6 +630,13 @@ b {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 3;
+}
+
+.header-wrapper * {
+  z-index: 2;
+  position: relative;
 }
 
 /* nav */
@@ -770,6 +777,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 11rem;
+  position: relative;
+  z-index: 2;
 }
 
 .features-title {
@@ -188940,4 +188949,28 @@ main {
   .show-mobile {
     display: initial;
   }
+}
+
+.particles-wrapper {
+  position: relative;
+}
+
+.particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.header-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.09567577030812324) 0%, rgba(0,0,0,0.196516106442577) 10%, rgba(0,0,0,0.3029586834733894) 20%, rgba(0,0,0,0.3981967787114846) 30%, rgba(0,0,0,0.5018382352941176) 40%, rgba(0,0,0,0.5970763305322129) 50%, rgba(0,0,0,0.804359243697479) 60%, rgba(0,0,0,0.896796218487395) 70%, rgba(0,0,0,1) 100%);
 }
