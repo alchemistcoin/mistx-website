@@ -328,6 +328,21 @@
   display: none;
 }
 
+.rotate-slow {
+  animation: infinite-spinning 36s infinite linear;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .title-large {
     font-size: 4rem;
