@@ -808,7 +808,7 @@ main {
 }
 
 .feature-content {
-  padding: .25rem 2.5rem;
+  padding: .25rem 2rem;
 }
 
 .feature-number {
@@ -824,8 +824,9 @@ main {
   border-radius: 50%;
   color: #FFBF00;
   font-size: 2.5rem;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 8px 0 0 0;
 }
 
 .feature-title {
