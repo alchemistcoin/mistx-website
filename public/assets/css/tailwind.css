@@ -848,6 +848,15 @@ main {
   padding: 7rem 0 6rem;
 }
 
+.labs-wrapper {
+  background-image: url('../img/landing/bg3.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7rem 0 6rem;
+}
+
+
 .about-title {
   margin-bottom: 3rem;
 }
